@@ -1,17 +1,17 @@
 const path = require('path');
-const merge = require('webpack-merge');
+const { merge } = require('webpack-merge');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+// const CopyWebpackPlugin = require('copy-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const root = path.resolve(__dirname, '../');
 
-const copyRules = [
-  {
-    from: path.resolve(root, 'src/assets'),
-    to: path.resolve(root, 'dist/'),
-  },
-];
+// const copyRules = [
+//   {
+//     from: path.resolve(root, 'src/assets'),
+//     to: path.resolve(root, 'dist/'),
+//   },
+// ];
 
 module.exports = merge({
   entry: path.resolve(root, 'src/index.tsx'),
@@ -40,7 +40,6 @@ module.exports = merge({
     new HtmlWebpackPlugin({
       template: path.resolve(root, 'src/index.html'),
     }),
-    new CopyWebpackPlugin(copyRules),
     new CleanWebpackPlugin(),
   ],
   module: {
