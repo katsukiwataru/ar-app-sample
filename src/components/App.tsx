@@ -1,11 +1,11 @@
-import React from 'react';
+// import React from 'react';
 
-export const App: React.FC = () => {
-  return (
-    <>
-      <div>
-        <p>App</p>
-      </div>
-    </>
-  );
-};
+// export const App: React.FC = () => {
+//   return (
+//     <>
+//       <div>
+//         <p>App</p>
+//       </div>
+//     </>
+//   );
+// };
