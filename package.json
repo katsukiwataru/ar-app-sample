@@ -7,7 +7,7 @@
     "dev": "webpack-dev-server --mode development --config webpack/develop.config.js",
     "build": "webpack --mode production --config webpack/production.config.js",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
